@@ -351,8 +351,8 @@ body {
   animation: slide 12s steps(4) infinite;
 }
 .about-wrapper .dynamic-txts li span {
-    font-family: 'Montserrat';
-    font-weight: 700;
+  font-family: "Montserrat";
+  font-weight: 700;
 }
 @keyframes slide {
   100% {
