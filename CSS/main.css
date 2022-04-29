@@ -263,7 +263,6 @@ body {
 
 /* section 2 */
 .section-2,
-.section-3,
 .section-4 {
   width: 70%;
   height: 100vh;
@@ -427,8 +426,33 @@ body {
   text-shadow: 0.1rem 0.1rem 0.2rem #ddd, -0.1rem -0.1rem 0.2rem #ddd;
 }
 
+@media (max-width: 576px) {
+  .section-2 {
+    width: 100%;
+  }
+  .section-heading {
+    font-size: 6rem;
+  }
+  .about-wrapper .static-txt {
+    font-size: 4rem;
+  }
+  .progress-bar {
+    width: 50rem;
+    margin: 2rem 0;
+  }
+}
+/* END OF section 3 */
 /* section 3 */
-
+.section-3 {
+  height: auto;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  margin: 0 auto;
+}
 .project-card-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -531,6 +555,7 @@ body {
   padding: 10px;
   font-weight: 400;
   color: #888;
+  text-align: center;
 }
 .contact-form {
   width: 70rem;
@@ -648,5 +673,42 @@ footer p {
   100% {
     left: -10%;
     top: -10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form {
+    width: 50rem;
+  }
+
+  footer {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    align-items: center;
+  }
+  footer p {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  footer .signature {
+    padding: 30px 0;
+  }
+
+  .signature img {
+    width: 75%;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .icon i {
+    line-height: 30px;
+    font-size: 1.5rem;
+  }
+  .social {
+    margin-top: 10px;
   }
 }
